@@ -4,6 +4,8 @@
     --bg-alternative-color: #444;
     --second-background-color: lightgray;
     --mobile-button-background: rgb(150, 150, 150);
+    --anchor-main-color: #2181ff;
+    --anchor-hover-color: rgb(30, 98, 187);
 }
 
 body {
@@ -193,13 +195,13 @@ header nav ul li a:hover {
 
 .info article .second-section div div a {
     text-decoration: none;
-    color: #2181ff;
+    color: var(--anchor-main-color);
     font-size: 1.3rem;
     transition: color 100ms ease-in 50ms;
 }
 
 .info article .second-section div div a:hover {
-    color: rgb(30, 98, 187)
+    color: var(--anchor-hover-color);
 }
 
 /* Careers Section */
@@ -331,7 +333,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    height: 6rem;
+    height: 5rem;
 }
 
 footer p {
@@ -377,6 +379,7 @@ footer div a:hover {
     /* MOBILE HEADER */
 
     header {
+        width: 100%;
         text-align: center;
     }
 
@@ -401,6 +404,7 @@ footer div a:hover {
     .mobile-introduction {
         background-color: var(--second-background-color, lightgray);
         height: auto;
+        width: 100%;
     }
 
     .mobile-introduction article img {
@@ -435,5 +439,94 @@ footer div a:hover {
         font-size: 1.25rem;
         color: var(--first-background-color, #fff);
         text-decoration: none;
+    }
+
+    /* MOBILE INFO SECTION*/
+
+    .mobile-info {
+        padding: 0 1rem;
+    }
+
+    .mobile-info article div {
+        margin: 3rem 0;
+    }
+
+    .mobile-info article div img {
+        width: 100%;
+    }
+
+    .mobile-info article div h3 {
+        margin-top: .9rem;
+        margin-bottom: .5rem;
+        font-size: 1.5rem;
+    }
+    
+    .mobile-info article div p {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .mobile-info article div a {
+        color: var(--anchor-main-color);
+        text-decoration: none;
+        font-size: 1.1rem;
+    }
+
+    /* MOBILE CAREERS SECTION */
+
+    .mobile-careers {
+        padding: 0 1rem;
+    }
+
+    .mobile-careers article h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+
+    .mobile-careers article div {
+        width: 100%;
+        height: 4rem;
+        background-color: var(--second-background-color, lightgray);
+        margin: 1rem 0;
+    }
+    .mobile-careers article div a {
+        position: relative;
+        top: 30%;
+        padding-left: 1rem;
+        color: rgb(56, 56, 56);
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    /* MOBILE THESIS SECTION */
+
+    .mobile-thesis {
+        width: 100%;
+    }
+
+    .mobile-thesis article h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .mobile-thesis article video {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    /* MOBILE FOOTER SECTION */
+
+    .mobile-footer {
+        width: 95%;
+        height: 3.5rem;
+    }
+
+    .mobile-footer p {
+        width: 100%;
+        font-size: 1rem;
+        color: gray;
+        margin-left: .5rem;
     }
 }
