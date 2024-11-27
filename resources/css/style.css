@@ -153,6 +153,7 @@ header nav ul li a:hover {
 .info article .first-section p {
     width: 95%;
     font-size: 1.2rem;
+    padding: 0;
 }
 
 .info article  .second-section {
@@ -245,7 +246,7 @@ header nav ul li a:hover {
 .careers article div p {
     margin: 0;
     padding-bottom: 2rem;
-    padding-top: .5rem;
+    padding-top: 1rem;
     font-size: 1.2rem;
 }
 
