@@ -12,6 +12,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .mobile {
@@ -202,6 +203,7 @@ header nav ul li a:hover {
 
 .info article .second-section div div a:hover {
     color: var(--anchor-hover-color);
+    text-decoration: underline;
 }
 
 /* Careers Section */
@@ -230,6 +232,13 @@ header nav ul li a:hover {
 
 .careers article div {
     background-color: var(--first-background-color, #fff);
+    transition: transform 100ms linear 100ms, filter 500ms linear 100ms;
+    cursor: pointer;
+}
+
+.careers article div:hover {
+    transform: scale(102%);
+    filter: saturate(200%);
 }
 
 .careers article div img {
@@ -492,7 +501,7 @@ footer div a:hover {
     }
     .mobile-careers article div a {
         position: relative;
-        top: 30%;
+        top: 25%;
         padding-left: 1rem;
         color: rgb(56, 56, 56);
         text-decoration: none;
